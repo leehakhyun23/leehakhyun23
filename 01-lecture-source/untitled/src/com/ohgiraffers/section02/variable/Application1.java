@@ -1,6 +1,6 @@
 package com.ohgiraffers.section02.variable;
 
-public class Appication1 {
+public class Application1 {
     public static void main(String[] args){
 
         /* 변수의 사용 목적을 이해할 수 있다. */
