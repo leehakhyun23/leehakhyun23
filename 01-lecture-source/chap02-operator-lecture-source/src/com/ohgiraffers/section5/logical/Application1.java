@@ -17,7 +17,7 @@ public class Application1 {
 
         * */
         /* 논리 연산자 결과값 확인 */
-        /*System.out.println("true와 true 의 논리 and 연산 " + (true && true));
+        System.out.println("true와 true 의 논리 and 연산 " + (true && true));
         System.out.println("true와 false 의 논리 and 연산 " + (true && false));
         System.out.println("false와 true 의 논리 and 연산 " + (false && true));
         System.out.println("false와 flase 의 논리 and 연산 " + (false && false));
@@ -26,7 +26,7 @@ public class Application1 {
         System.out.println("true와 true 의 논리 or 연산 " + (true || true));
         System.out.println("true와 false 의 논리 or 연산 " + (true || false));
         System.out.println("false와 true 의 논리 or 연산 " + (false || true));
-        System.out.println("false와 flase 의 논리 or 연산 " + (false || false)); */
+        System.out.println("false와 flase 의 논리 or 연산 " + (false || false));
 
         /* 2. 논리식에 논리연산자 활용*/
 
