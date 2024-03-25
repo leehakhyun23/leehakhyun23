@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/01_JAVA.iml" filepath="$PROJECT_DIR$/.idea/01_JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_JAVA_pratice/chap01-literal-and-variable-practice/chap01-literal-and-variable-practice.iml" filepath="$PROJECT_DIR$/02_JAVA_pratice/chap01-literal-and-variable-practice/chap01-literal-and-variable-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-lecture-source/chap02-operator-lecture-source/chap02-operator-lecture-source.iml" filepath="$PROJECT_DIR$/01-lecture-source/chap02-operator-lecture-source/chap02-operator-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_JAVA_pratice/chap02-operator-practice/chap02-operator-practice.iml" filepath="$PROJECT_DIR$/02_JAVA_pratice/chap02-operator-practice/chap02-operator-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-lecture-source/chap03-method-and-api-lecture-source/src/chap03-method-and-api-lecture-source.iml" filepath="$PROJECT_DIR$/01-lecture-source/chap03-method-and-api-lecture-source/src/chap03-method-and-api-lecture-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-lecture-source/chap03-method-and-api-lecture-source/chap03-method-and-api-lecture-source1.iml" filepath="$PROJECT_DIR$/01-lecture-source/chap03-method-and-api-lecture-source/chap03-method-and-api-lecture-source1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_JAVA_pratice/chap03-method-and-api-practice/chap03-method-and-api-practice.iml" filepath="$PROJECT_DIR$/02_JAVA_pratice/chap03-method-and-api-practice/chap03-method-and-api-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testProject/testProject.iml" filepath="$PROJECT_DIR$/testProject/testProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-lecture-source/untitled/untitled.iml" filepath="$PROJECT_DIR$/01-lecture-source/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
