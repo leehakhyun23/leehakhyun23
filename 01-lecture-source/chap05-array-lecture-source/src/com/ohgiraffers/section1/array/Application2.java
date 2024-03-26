@@ -1,5 +1,7 @@
 package com.ohgiraffers.section1.array;
 
+import java.util.Scanner;
+
 public class Application2 {
     public static void main(String[] args) {
         /* 배열의 사용 방법 익히기 */
@@ -47,5 +49,18 @@ public class Application2 {
         hashcode() : 일반적으로 객체의 주소값을 10 진수로 변환하여 생성된 객체의 고유한 정수값을 반환한다
         동일객체인지 비교할 때 사용할 목적으로 쓰이며 동등 객체를 동일 갳게 취급하기 위해 오버라이딩해서 사용한다.
         */
+        System.out.println(arr2.length);
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" 새로 할당할 배열의 길이를 입력하세요 : ");
+        int size = sc.nextInt();
+        double darr[] = new double[size];
+        System.out.println("darr의 해시코드 : "+ darr.hashCode()); //51228289
+        System.out.println("darr의 길이 " + darr.length);
+        darr = new double[30];
+        System.out.println("변경후 darr의 해시코드 : "+ darr.hashCode()); //455896770
+        System.out.println("변경후 darr의 길이 " + darr.length);
+
+
+
     }
 }
