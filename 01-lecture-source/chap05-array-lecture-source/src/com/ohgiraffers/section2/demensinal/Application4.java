@@ -13,7 +13,9 @@ public class Application4 {
             }
             System.out.println();
         }
+
         /* 2-2 가변배열 */
+
         int[][] iarr1 = {{1,2,3,4},{5,6,7},{8,9}};
         for(int i = 0; i<iarr.length; i++){
             for(int k = 0; k < iarr1[i].length; k++){
@@ -21,12 +23,13 @@ public class Application4 {
             }
             System.out.println();
         }
+
         int[] arr1 = {1,2,3,4,5};
         int[] arr2 = {6,7,8,9,10};
         int[][] iarr3 = {arr1, arr2};
-        
-        for(int i = 0; i<iarr.length; i++){
-            for(int k = 0; k < iarr3[i].length; k++){
+
+        for(int i = 0; i<iarr3.length; i++){
+            for(int k = 0; k < iarr3[0].length; k++){
                 System.out.print(iarr3[i][k] + " ");
             }
             System.out.println();
