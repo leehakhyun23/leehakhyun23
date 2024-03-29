@@ -1,8 +1,8 @@
 package com.ohgiraffers.section6.statickeyword;
 
 public class StaticFieldTest {
-    private int nonStaticCount;
-    private static int staicCount;
+    private int nonStaticCount; //논스태틱 속성 생성
+    private static int staicCount; //스태틱 속성 생성
 
     public StaticFieldTest(){}
 

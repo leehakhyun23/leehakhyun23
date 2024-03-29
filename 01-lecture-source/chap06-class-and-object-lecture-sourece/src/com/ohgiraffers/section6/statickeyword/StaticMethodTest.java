@@ -7,8 +7,8 @@ public class StaticMethodTest {
         this.count++;
         System.out.println("nonStaticMethod 호출함");
     }
-    public  static void staticMethod(){
-        // this.count++;
+    public static void staticMethod(){
+         //StaticMethodTest.count++;
 
         System.out.println("staticmethod 호출함");
     }
