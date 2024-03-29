@@ -1,4 +1,4 @@
-package com.ohgiraffer.section02.packge_and_import;
+package com.ohgiraffer.section02;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -21,5 +21,4 @@ public class Application1 {
 
         System.out.println("30과 20중에 더 큰 값은 ?"+ max );
     }
-
 }

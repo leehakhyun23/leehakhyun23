@@ -33,7 +33,9 @@ public class Application1 {
 
         // 3-3 대입연산시 활용
         int sum = AGE;
-        // AGE = AGE + 10; //대입연산자의 왼쪽편에는 기술이 불가능함.
+        //AGE = AGE + 10; //대입연산자의 왼쪽편에는 기술이 불가능함.
+
+
 
     }
 }
