@@ -67,5 +67,37 @@ public class Application {
         a1.cry();
         a2.cry();
 
+        /* 7. 타입형변환 */
+        System.out.println("============타입 형변환 확인==============");
+        ((Rabbit)a1).jump();
+        ((Tiger)a2).bite();
+        // ((Tiger)a1).bite();
+        /* 8.instanceof 연산자 사용 확인 */
+        System.out.println("===========instanceof============");
+        System.out.println("a1이 Tiger 타입인지 확인 : " + (a1 instanceof Tiger));
+        System.out.println("a1이 Rabbit 타입인지 확인 : " + (a1 instanceof Rabbit));
+        System.out.println("a1이 Animal 타입인지 확인 : " + (a1 instanceof Animal));
+        System.out.println("a1이 Object 타입인지 확인 : " + (a1 instanceof Object));
+
+        if(a1 instanceof Rabbit){
+            ((Rabbit)a1).jump();
+        }
+        if(a1 instanceof Tiger){
+            ((Tiger)a1).bite();
+        }
+
+        /* 9. 클래스의 업캐스팅 다운캐스팅 */
+        /*
+        * 클래스 형변환은 up-casting과 down-casting으로 구분할 수 있다.
+        * up-casting : 상위 타입으로의 형변환
+        * down-casting : 하위 타입으로의 형변환
+        * 또한 작성 여부따라 명시적과 묵시적 두가지로 구분한다.
+        * */
+
+        Animal animal2 = new Rabbit(); // up casting 묵시적 형변환
+        Animal animal3 = (Animal)new Rabbit(); // up casting 명시적 형변환Animal animal4 = new ();
+
+        Rabbit rabbit2 = (Rabbit)animal2; // down-casting 명시적 형변환
+       // Rabbit rabbit2 = animal5; // downcasting 묵시적형변환 불가
     }
 }
