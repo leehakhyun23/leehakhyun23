@@ -16,7 +16,7 @@ public class Application1 {
 
         int num = 10;
         int num1 = 20;
-        int num2 =30;
+        int num2 = 30;
         int num3 = 40;
         int num4 = 50;
 

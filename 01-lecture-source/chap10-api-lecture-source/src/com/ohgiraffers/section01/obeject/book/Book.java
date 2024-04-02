@@ -57,7 +57,7 @@ public class Book {
         if(obj == null){
             return false;
         }
-        Book other = (Book) obj;
+        Book other = (Book) obj; //다운 캐스팅
 
         if(this.num != other.num){
             return false;
@@ -66,14 +66,14 @@ public class Book {
             if(other.title !=null){
                 return false;
             }
-        }else if(!this.title.equals(other.title)){
+        }else if(this.title.equals(other.title)){
             return false;
         }
         if(this.author == null){
             if(other.author !=null){
                 return false;
             }
-        }else if(!this.author.equals(other.author)){
+        }else if(this.author.equals(other.author)){
             return false;
         }
         if(this.price != other.price){
@@ -90,5 +90,21 @@ public class Book {
                 ", author='" + author + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+
+        int result = 1;
+        final int PRIME = 31;
+
+        result = PRIME * result + this.num;
+
+        result = PRIME * result + this.title.hashCode();
+        result = PRIME * result + this.author.hashCode();
+        result = PRIME * result + this.price;
+
+        return result;
+
     }
 }
