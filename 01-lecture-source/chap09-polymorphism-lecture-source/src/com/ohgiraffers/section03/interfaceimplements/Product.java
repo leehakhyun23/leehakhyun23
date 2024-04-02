@@ -1,4 +1,4 @@
-package com.ohgirafferes.section03.interfaceimplements;
+package com.ohgiraffers.section03.interfaceimplements;
 
 public class Product extends Object implements InterProduct, java.io.Serializable {
 

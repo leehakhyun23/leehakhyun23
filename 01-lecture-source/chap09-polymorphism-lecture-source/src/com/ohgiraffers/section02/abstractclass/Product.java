@@ -1,4 +1,4 @@
-package com.ohgirafferes.section02.abstractclass;
+package com.ohgiraffers.section02.abstractclass;
 
 public abstract class Product {
     private int nonStaticField;

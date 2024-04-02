@@ -1,4 +1,4 @@
-package com.ohgirafferes.section02.abstractclass;
+package com.ohgiraffers.section02.abstractclass;
 
 public class SmartPhone extends Product{
 

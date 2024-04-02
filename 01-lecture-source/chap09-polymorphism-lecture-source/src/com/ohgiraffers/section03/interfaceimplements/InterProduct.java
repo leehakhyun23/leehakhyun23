@@ -1,4 +1,4 @@
-package com.ohgirafferes.section03.interfaceimplements;
+package com.ohgiraffers.section03.interfaceimplements;
 
 public interface InterProduct extends java.io.Serializable /*, java.util.Comparator*/{
     /* 인터페이스가 인터페이스를 상속 받을 시에는 extends 키워드를 사용하며
