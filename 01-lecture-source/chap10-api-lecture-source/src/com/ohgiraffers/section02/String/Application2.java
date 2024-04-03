@@ -29,6 +29,7 @@ public class Application2 {
 
         str1 += "oracle";
         System.out.println("str1 == str2 : " + (str1==str2));
+        System.out.println("오라클을 더한 해쉬 코드 " + str1.hashCode());
         /* equals() : String 클래스의 equals() 메소드는 인스턴스의 비교가 아니라 문자열 값을 비교하여
         * 동일한 값을 가지면 true, 다른값을 가지는 경우 false를 가지도록 Object equals() 메소드를
         * 재정의 해두었다.
