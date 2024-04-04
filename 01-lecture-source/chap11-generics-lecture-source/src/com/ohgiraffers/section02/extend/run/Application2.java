@@ -1,9 +1,6 @@
 package com.ohgiraffers.section02.extend.run;
 
-import com.ohgiraffers.section02.extend.Mammal;
-import com.ohgiraffers.section02.extend.Rabbit;
-import com.ohgiraffers.section02.extend.RabbitFarm;
-import com.ohgiraffers.section02.extend.WildCardFarm;
+import com.ohgiraffers.section02.extend.*;
 
 public class Application2 {
     public static void main(String[] args) {
@@ -20,5 +17,19 @@ public class Application2 {
         WildCardFarm wildCardFarm = new WildCardFarm();
        //wildCardFarm.anyType(new RabbitFarm<Mammal>(new Rabbit()));
         wildCardFarm.anyType(new RabbitFarm<Rabbit>(new Rabbit()));
+        wildCardFarm.anyType(new RabbitFarm<Bunny>(new Bunny()));
+        wildCardFarm.anyType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+
+        System.out.println("--------------------------------");
+        //wildCardFarm.extendsType(new RabbitFarm<Rabbit>(new Rabbit()));
+        wildCardFarm.extendsType(new RabbitFarm<Bunny>(new Bunny()));
+        wildCardFarm.extendsType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+
+        System.out.println("--------------------------------");
+        wildCardFarm.superType(new RabbitFarm<Rabbit>(new Rabbit()));
+        wildCardFarm.superType(new RabbitFarm<Bunny>(new Bunny()));
+        //wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+
     }
+
 }
