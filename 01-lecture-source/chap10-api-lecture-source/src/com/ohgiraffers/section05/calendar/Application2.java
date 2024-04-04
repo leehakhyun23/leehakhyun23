@@ -7,7 +7,7 @@ public class Application2 {
     public static void main(String[] args) {
         /* java.util.Calender 클래스 사용법을 이해하고 사용할 수 있다. */
         /*
-         * API문서를 살펴보면 Calender클래스는 absract클래스로 작성되어있다.
+         * API문서를 살펴보면 Calendar클래스는 absract클래스로 작성되어있다.
          * 따라서 Calender 클래스를 이용해서 인스턴스를 생성하는 것이 불가능하다.
          *
          * */
