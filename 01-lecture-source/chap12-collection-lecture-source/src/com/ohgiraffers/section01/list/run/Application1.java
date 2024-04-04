@@ -83,9 +83,37 @@ public class Application1 {
         * ArrayList에서 LinkedList로 변경할 수 있다.
         * */
         str = new LinkedList<>(str);
+        /*
+        * Iterator 반복자 인터페이스를 활용해서 역순으로 정렬한다.
+        * LinkedList 타입으로 형변환 후 descendingIterator() 메소드를 사용하면
+        * 내림차순으로 정렬된 타입의 목록ㅇ로 반환해준다.
+        * hasNext() : 다음요소를 가지고 있는 경우 true, 더이상 요소가 없는 경우 false
+        * next() : 다음요소를 반환
+        *
+        * Collection 인터페이스의 Iterator() 메소드를 이용해서 인스턴스를 생성할 수 있따.
+        * 컬렉션에서 값을 읽어오는 방식을 통일된 방식으로 제공하기 위해 사용한다.
+        * 반복자라고 불리우며, 반복문을 이용해서 목록을 하나씩 꺼내는 방식으로 사용하기 위함이다.
+        * 인덱스로 관리되는 컬렉션이 아닌 경우에 반복문을 사용해서 요소에 하나씩 접근할 수 없기 때문에
+        * 인덱스를 사용하지 않고도 반복문을 사용하기 위한 목록을 만들어주는 역할이다.
+        * */
+
+        Iterator<String> dIter = ((LinkedList<String>) str).descendingIterator();
+
+//        while(dIter.hasNext()){
+//            System.out.println(dIter.next());
+//        }
+//        System.out.println("-----------------------------");
+//        while(dIter.hasNext()){
+//            System.out.println(dIter.next());
+//        }
+        List<String> decsList = new ArrayList<>();
+
+        while(dIter.hasNext()){
+            decsList.add(dIter.next());
+        }
+        System.out.println(decsList);
 
 
-                
-        
+
     }
 }
