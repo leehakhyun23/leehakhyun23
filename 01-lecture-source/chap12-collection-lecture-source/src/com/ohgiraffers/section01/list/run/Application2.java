@@ -41,7 +41,6 @@ public class Application2 {
                 return o1.getPrice() >= o2.getPrice()? -1: 1;
             }
         });
-        
 
 
 
