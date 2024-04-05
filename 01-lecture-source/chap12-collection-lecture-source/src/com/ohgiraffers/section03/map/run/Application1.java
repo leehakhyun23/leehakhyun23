@@ -1,7 +1,6 @@
 package com.ohgiraffers.section03.map.run;
 
-import java.util.Date;
-import java.util.HashMap;
+import java.util.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -37,5 +36,38 @@ public class Application1 {
         h.remove(9);
         System.out.println("h = " + h);
         System.out.println(h.size());
+
+        HashMap<String, String> h2 = new HashMap<>();
+        h2.put("일","java");
+        h2.put("이","oracle");
+        h2.put("삼","jdbc");
+        h2.put("사","html");
+        h2.put("오","css");
+
+        Iterator<String> ketIter = h2.keySet().iterator();
+        while (ketIter.hasNext()){
+            String key = (String) ketIter.next();
+            String value = (String) h2.get(key);
+            System.out.println( key + "  = "+ value );
+        }
+        // 반복자를 사용해서 처리
+        Collection<String> value = h2.values();
+        Iterator<String> valueIter = value.iterator();
+        while (valueIter.hasNext()){
+            System.out.println(valueIter.next());
+        }
+        
+        // Map 을 배열을 만들어서 처리
+        Object[] valuearry = value.toArray();
+        for (int i=0; i< valuearry.length; i++){
+            System.out.println( i + " : valuearry[i] = " + valuearry[i]);
+        }
+
+        //Entry를 사용해서 처리  Entry는 키와 객체를 쌍으로 묶는 것
+        Set<Map.Entry<String, String>> set = h2.entrySet();
+        Iterator<Map.Entry<String, String>> entry = set.iterator();
+        while(entry.hasNext()){
+            System.out.println("entry.next() = " + entry.next());
+        }
     }
 }
