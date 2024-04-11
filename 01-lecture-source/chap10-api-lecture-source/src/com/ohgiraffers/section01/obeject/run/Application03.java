@@ -14,16 +14,16 @@ public class Application03 {
         * 같은 코드값을 가져야한다는 규약에 위반되게 된다,(강제성은 없지만 규약대로 작성하는게 좋음)
         * */
 
-        Book book1 = new Book(1,"홍길동전", " 허균 ", 50000);
-        Book book2 = new Book(1,"홍길동전", " 허균 ", 50000);
+        Book book1 = new Book(1,"홍길동전", "허균", 50000);
+        Book book2 = new Book(1,"홍길동전", "허균", 50000);
 
         System.out.println("book1.hashcode() = " + book1.hashCode());
         System.out.println("book2.hashcode() = " + book2.hashCode());
 
         Map<Book, String> map = new HashMap<>();
-        map.put((new Book(1,"홍길동전", " 허균 ", 50000)),"Best");
+        map.put(new Book(1,"홍길동전", "허균", 50000),"Best");
 
-        String str = map.get((new Book(1,"홍길동전", " 허균 ", 50000)));
+        String str = map.get(new Book(1,"홍길동전", "허균", 50000));
         System.out.println(str);
     }
 }

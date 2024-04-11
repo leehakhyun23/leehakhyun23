@@ -45,6 +45,7 @@ public class Application2 {
             if(fr != null)
             try {
                 fr.close();
+                System.out.println("클로즈 한건데");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
