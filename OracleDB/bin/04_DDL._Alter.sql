@@ -83,12 +83,15 @@ alter table rentlist drop constraint fk1;
 alter table rentlist drop constraint fk2;
 alter table rentlist drop constraint rent_pk;
 
+
 -- rentlist의 기본키를 numseq로 설정
 ALTER TABLE rentlist ADD constraint renk_pk primary key(numseq);
 -- rentlist의 외래키를 fk1, fk2로 설정
 ALTER TABLE rentlist add constraint fk1 foreign key(bnum) references booklist(booknum);
 ALTER TABLE rentlist add constraint fk2 foreign key(mnum) references memberlist(membernum);
-
+SELECT * FROM BOOKLIST;
+SELECT * FROM rentlist;
+SELECT * FROM memberlist;
 CREATE TABLE ORDERS1(
 	ORDER_ID NUMBER(12,0),
 	ORDER_DATE DATE default sysdate,
