@@ -1,0 +1,14 @@
+package JDBC02;
+
+import java.util.Scanner;
+
+public class Book_Insert {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+	}
+
+}

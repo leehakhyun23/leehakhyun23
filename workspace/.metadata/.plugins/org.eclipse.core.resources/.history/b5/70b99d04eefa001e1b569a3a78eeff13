@@ -1,0 +1,15 @@
+package JDBC01;
+
+import java.sql.Connection;
+
+public class JDBC_Connect {
+
+	public static void main(String[] args) {
+		
+		// 1. JDBC 를 통한 데이터 베이스 연결 클래스의 객체  : Connection 생성
+		Connection con = null;
+		
+
+	}
+
+}

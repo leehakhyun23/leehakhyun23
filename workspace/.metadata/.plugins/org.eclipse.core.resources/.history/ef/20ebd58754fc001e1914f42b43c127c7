@@ -1,0 +1,56 @@
+package JDBC03;
+
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+
+import JDBC02.BookDto;
+
+public class Member_Update {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("수정할 회원의 번호를 입력하세요");
+		int membernum = Integer.parseInt(sc.nextLine());
+		
+		MemberDao mdao = new MemberDao();
+		MemberDto mdto = mdao.getMember(membernum);
+		
+		
+	
+		if(mdto == null) {
+			System.out.println("입력하신 번호가 존재하지 않습니다 \n 프로그램을 종료합니다");
+			return ;
+		}
+		System.out.printf("이름: %s \n 수정할 이름을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getMembernum() );
+		String name = sc.nextLine();
+		if(!name.equals("") ) mdto.setName(name);
+		
+		System.out.printf("번호: %s \n 수정할 전화번호를 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getPhone() );
+		String phone = sc.nextLine();
+		if(!phone.equals("") ) mdto.setPhone(phone);
+		
+		System.out.printf("생년월일 : %s\n", )
+		System.out.printf("생년월일 : %d \n 수정할 생년월일을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getBirth() );
+		String birth = sc.nextLine();
+		if(!birth.equals("") ) mdto.setBirth(birth);
+		
+		System.out.printf("성별: %s \n 수정할 성별을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getGender() );
+		String gender = sc.nextLine();
+		if(!gender.equals("") ) mdto.setGender(gender);
+		
+		System.out.printf("나이: %s \n 수정할 나이를 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getAge() );
+		String age = sc.nextLine();
+		if(!age.equals("") ) mdto.setAge(Integer.parseInt(age));
+		
+		System.out.printf("사은포인트: %s \n 수정할 사은포인트를 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", mdto.getBpoint() );
+		String bpoint = sc.nextLine();
+		if(!bpoint.equals("") ) mdto.setBpoint(Integer.parseInt(bpoint));
+		int result = mdao.updatemember( mdto);
+		if(result == 1) System.out.println("수정성공");
+		else System.out.println("수정 실패");
+	}
+
+		
+}
+
+

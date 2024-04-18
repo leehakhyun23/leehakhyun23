@@ -1,0 +1,15 @@
+-- 01_DDL.sql
+
+CREATE TABLE `scott`.`memberlist` (
+  `membernum` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `phone` VARCHAR(45) NOT NULL,
+  `birth` DATETIME NULL DEFAULT now(),
+  `age` INT NULL DEFAULT 20,
+  `bpoint` INT NULL DEFAULT 0,
+  PRIMARY KEY (`membernum`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+select * from memberlist;

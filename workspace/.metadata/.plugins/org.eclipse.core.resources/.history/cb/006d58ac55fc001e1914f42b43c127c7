@@ -1,0 +1,5 @@
+-- 12_GroupFunction.sql
+
+-- 테이블내에 하나의 필드값들 전체로 하는 함수 
+
+SELECT sum(inpirce) from booklist;

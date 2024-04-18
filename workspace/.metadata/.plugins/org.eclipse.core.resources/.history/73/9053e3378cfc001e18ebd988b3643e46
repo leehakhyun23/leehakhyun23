@@ -1,0 +1,22 @@
+package JDBC;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+public class RentDao {
+	
+	private RentDao() {	}
+	private static RentDao itc = new RentDao();
+	public static RentDao getInstance() {
+		return itc;
+	}
+	
+	//Dbman db = new Dbman();
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	//public void abc() {
+	//	con = Dbman.getConnection();	
+	//	Dbman.close(con, pstmt , rs);
+	//}
+}

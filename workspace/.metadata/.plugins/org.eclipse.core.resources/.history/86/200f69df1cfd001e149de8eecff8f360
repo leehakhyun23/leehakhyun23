@@ -1,0 +1,29 @@
+package JDBC;
+
+import java.util.Scanner;
+
+public class Rnetlist_Update {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		RentDao rdao = RentDao.getInstance();
+		RentDto rdto = new RentDto();
+		
+		
+		//수정할 대여기로의 번호 입력
+		
+		//기록이 있는지 확인합니다. 없으면 종료
+		
+		//수정할 도서번호를 입력, 입력한 번호의 도서가 없으면 다시 입력
+		
+		// 수정할 회원번호를 입력, 입력한 번호의 회원번호가 없으면 다시 입력 
+		
+		// 수정할 할인금액 입력
+		
+		// rentDto에 모두 담아서 updateRent 메소드에 전송
+		
+		
+	}
+
+}

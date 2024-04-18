@@ -1,0 +1,28 @@
+package days01;
+
+// 같은 패키지안에서 같은 이름의 클래스는 생성이 불가능하다
+//멤버 메소드 : 클래스에 소속되어 클래스 객체에 종속된 메소드
+class Animal{
+	String name;
+	int age;
+}
+public class Method01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Animal a1 = new Animal();
+		Animal a2 = new Animal();
+		a1.name = "댕댕";
+		a1.age= 10;
+		a2.name = "냥냥";
+		a2.age= 6;
+		prn(a1);
+		System.out.println("저의 이름은 " + a1.name + " 나이는 " + a1.age + "살입니다");
+		System.out.println("저의 이름은 " + a2.name + " 나이는 " + a2.age + "살입니다");
+	}
+	private static void prn(Animal a1) {
+		System.out.println("저의 이름은 " + a1.name + " 나이는 " + a1.age + "살입니다");
+	}
+
+}

@@ -1,0 +1,37 @@
+package JDBC02;
+
+import java.util.Scanner;
+
+public class Book_Update {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("수정할 도서의 도서번호를 입력하세요");
+		int booknum = Integer.parseInt(sc.nextLine());
+		
+		BookDao bdao = new BookDao();
+		// 입력한 도서번호로 도서를 조회해서 대상 도서가 있는지 확인합니다
+		BookDto bdto = bdao.getBook(booknum);
+
+		if(bdto == null) {
+			System.out.println("입력한 도서번호의 도서가 존재하지 않습니다 \n 프로그램을 종료합니다");
+			return;
+		}
+		System.out.printf("제목: %s \n 수정할 제목을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", bdto.getSubject() );
+		String subject = sc.nextLine();
+		if(!subject.equals("") ) bdto.setSubject(subject);
+		
+		System.out.printf("출판년도: %d \n 수정할 출판년도을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", bdto.getMakeyear() );
+		String makeyear = sc.nextLine();
+		if(!makeyear.equals("") ) bdto.setMakeyear(makeyear);
+		
+		System.out.printf("입고가격: %d \n 수정할 입고가격을 입력하세요(수정하지 않으려면 엔터를 눌러주세여)", bdto.getMakeyear() );
+		String inprice = sc.nextLine();
+		if(!inprice.equals("") ) bdto.setInprice(Integer.parseInt(inprice));
+		
+		
+		
+	}
+
+}
